@@ -1,0 +1,7 @@
+{
+  "name": "Ionic 4 Kiosk Starter",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

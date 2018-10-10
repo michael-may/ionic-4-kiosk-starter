@@ -1,0 +1,73 @@
+:host {
+	//========================== Modal Object
+	pointer-events: all;
+
+	.modal {
+		background-color: rgba(0, 0, 0, .65);
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 100000;
+		.modal-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			align-content: center;
+			height: 100%;
+		}
+	}
+
+	.modal-body {
+		text-align: center;
+		color: white;
+		margin-top: -10%;
+	}
+
+	.countdown {
+		width: 20vw;
+		height: 20vw;
+		background: #FFB716;
+		border-radius: 50%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 40px;
+
+		span {
+			font-size: 5vmax;
+			font-weight: 700;
+			color: white;
+		}
+	}
+
+	.message {
+		font-size: 5vmax;
+		line-height: 5vmax;
+	}
+
+	.btn-wrap {
+		padding-top: 4vh;
+	}
+
+	.btn {
+		display: block;
+		background: white;
+		width: 50vw;
+		margin: 0 auto;
+		padding: 4vmin;
+		font-size: 3vmax;
+		border-radius: 16px;
+		transition: opacity 300ms;
+		transition-delay: 100ms;
+
+		&:active {
+			opacity: 0.5;
+			transition: none;
+		}
+	}
+
+}

@@ -1,0 +1,16 @@
+<div @slideUpFadeIn class="modal" *ngIf="showModal">
+    <div class="modal-container">
+        <div class="modal-body">
+            <div class="countdown">
+                <span>{{ currentCountdownNumber }}</span>
+            </div>
+            <span class="message" [innerHTML]="message"></span>
+            <div class="btn-wrap">
+                <a class="btn btn-primary-orange" (click)="timeoutReset.emit(true); hideAlert(true)">{{ buttonText }}</a>
+                <br>
+                <a class="btn btn-primary-orange" (click)="goToDefault(); hideAlert(true);">No, I'm finished.</a>
+            </div>
+        </div>
+    </div>
+</div>
+    

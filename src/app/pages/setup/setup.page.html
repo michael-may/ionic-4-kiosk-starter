@@ -1,0 +1,20 @@
+<ion-content padding>
+
+    <h2>Setup</h2>
+
+    <form (ngSubmit)="save($event)">
+        <div class="form-group" *ngFor="let input of inputs">
+            <label for="name">{{ input.display_name }}</label>
+            <input type="number" class="form-control" [(ngModel)]="model[input.name]" name="{{input.name}}" required>
+        </div>
+        <div class="button-wrap">
+            <button ion-button type="submit">Save Settings</button>
+        </div>
+    </form>
+
+    <div class="env">
+        <li>Production Mode: {{ env.production }}</li>
+    </div>
+
+</ion-content>
+    

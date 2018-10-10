@@ -1,0 +1,23 @@
+ion-content {
+    background: #212121;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+input {
+    color: #212121;
+}
+
+.env {
+    margin-top: 30px;
+    color: white;
+    li {
+        list-style-type: none;
+        margin:5px 0;
+        padding: 0;
+    }
+}
